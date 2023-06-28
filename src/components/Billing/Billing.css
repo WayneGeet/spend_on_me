@@ -1,0 +1,15 @@
+.b1{
+    @apply flex justify-center flex-col
+}
+
+.b2{
+    @apply hover:border rounded-lg border-gray-700 py-2 flex gap-5 items-center pl-2 my-3 relative
+}
+
+.bill_transparent h4{
+    @apply text-transparent
+}
+
+.bill_lighter{
+    @apply text-slate-400
+}
