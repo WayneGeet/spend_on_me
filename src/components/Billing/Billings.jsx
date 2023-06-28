@@ -14,8 +14,8 @@ const Billings = ({addPurchase, purchase, setIsMonth, isMonth}) => {
   return (
     <>
         <div className="">
-            <h2 className="cursor-pointer text-slate-800 text-3xl font-bold">Select your plan</h2>
-            <p className="text-gray-400 text-base">You have the option of monthly or yearly billing</p>
+            <h2 className="cursor-pointer text-slate-800 text-2xl font-bold md:text-3xl">Select your plan</h2>
+            <p className="text-gray-400 text-sm md:text-base">You have the option of monthly or yearly billing</p>
         </div>
 
         <div className="grid grid-cols-1 grid-rows-3 h-fit gap-2 mt-4 mb-3 md:flex md:gap-5">
@@ -41,7 +41,7 @@ const Billings = ({addPurchase, purchase, setIsMonth, isMonth}) => {
         </div>
 
         {/* <button className="border border-sky-300 rounded-md px-5 py-4 relative translate-x-20 bg-slate-400 text-white font-semibold" onClick={onToggle}>Toggle y and m</button> */}
-        <div className="bg-red-50 rounded-md flex justify-center py-3 md:w-[90%]">
+        <div className="bg-red-100 rounded-md flex justify-center py-3 mt-10 md:w-[90%]">
           <button type="button" onClick={()=>setIsMonth(() => false)} className={` ${!isMonth ? "text-gray-500 opacity-70" : "text-slate-800 opacity-100"} font-semibold  border-none mx-3 `}>Month</button>
           <Switch checked={isMonth} onChange={() => {
             setIsMonth(prev => !prev)}}/>

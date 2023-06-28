@@ -40,8 +40,8 @@ const Finish = ({services, deal, isMonth}) => {
     return (
     <>
         <div className="mb-5">
-            <h2 className="text-slate-800 text-3xl font-bold ">Finishing up</h2>
-            <p className="text-gray-400 text-base">Double check everything looks okay before confirming</p>
+            <h2 className="text-slate-800 text-2xl font-bold md:text-3xl ">Finishing up</h2>
+            <p className="text-gray-400 text-sm md:text-base">Double check everything looks okay before confirming</p>
         </div>
 
         <div className="bg-red-50">

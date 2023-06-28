@@ -34,12 +34,12 @@ const Main = () => {
             </div>
         </div>
 
-        <div className=" py-8 w-full relative flex flex-col items-center md:-top-12">
+        <div className=" py-8 w-full relative flex flex-col items-center md:-top-12 px-5">
             <div className="">
                 <Card currStep={currStep} thanks={complete}/>
             </div>
            {!complete &&
-            <div className="flex items-center w-1/2 mx-auto fixed bottom-5 ml-auto md:absolute gap-10 left-4">
+            <div className="flex items-center mx-auto absolute -bottom-28 w-full md:absolute gap-10 left-4 md:bottom-0">
                 <Buttons onClick={ () => {
                         currStep !== 1 && setCurrStep(i => i-1)
                     }}>Go Back

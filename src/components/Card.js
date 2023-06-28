@@ -42,7 +42,7 @@ const Card = ({currStep, thanks}) => {
     <>
       <article className="mx-auto max-w-lg shadow-xl rounded-lg bg-white py-6 mt-14 relative max-h-[69vh]
       md:shadow-none md:bg-none md:min-w-[30vw] md:bg-transparent ">
-        <div className="px-5 pb-10 md:min-h-[55vh] ">
+        <div className="px-5 pb-10 min-h-[55vh] h-[55vh]">
             {!thanks ? pageDisplay() : <Thankyou/>}
         </div>
       </article>

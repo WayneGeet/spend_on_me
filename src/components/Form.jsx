@@ -21,8 +21,8 @@ const Form = () => {
   return (
     <>
         <div>
-            <h2  className="text-slate-800 text-3xl font-bold">Personal info</h2>
-            <p className="text-gray-400 text-base">Please provide your name, email address, and phone number</p>
+            <h2  className="text-slate-800 text-2xl md:text-3xl font-bold">Personal info</h2>
+            <p className="text-gray-400 text-sm md:text-base">Please provide your name, email address, and phone number</p>
         </div>
         <div>
             <form onSubmit={formik.handleSubmit} 
